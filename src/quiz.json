@@ -438,25 +438,25 @@
       },
       "items": [
         {
-          "de": "Merkur (etwa 88 Tage)",
-          "en": "Mercury (about 88 days)"
+          "de": "Merkur",
+          "en": "Mercury"
         },
         {
-          "de": "Mars (etwa 687 Tage)",
-          "en": "Mars (about 687 days)"
+          "de": "Mars",
+          "en": "Mars"
         },
         {
-          "de": "Jupiter (etwa 12 Erdjahre)",
-          "en": "Jupiter (about 12 Earth years)"
+          "de": "Jupiter",
+          "en": "Jupiter"
         },
         {
-          "de": "Saturn (etwa 29 Erdjahre)",
-          "en": "Saturn (about 29 Earth years)"
+          "de": "Saturn",
+          "en": "Saturn"
         }
       ],
       "explanation": {
-        "de": "Je weiter ein Planet von der Sonne entfernt ist, desto länger ist sein Weg und desto langsamer ist er. Darum ist sein Jahr länger.",
-        "en": "The farther a planet is from the Sun, the longer its path and the slower it moves. So its year is longer."
+        "de": "Je weiter ein Planet von der Sonne entfernt ist, desto länger ist sein Weg und desto langsamer ist er. Darum ist sein Jahr länger: Merkur braucht etwa 88 Tage, Mars etwa 687 Tage, Jupiter etwa 12 Erdjahre und Saturn etwa 29 Erdjahre.",
+        "en": "The farther a planet is from the Sun, the longer its path and the slower it moves. So its year is longer: Mercury needs about 88 days, Mars about 687 days, Jupiter about 12 Earth years and Saturn about 29 Earth years."
       },
       "links": [
         {
