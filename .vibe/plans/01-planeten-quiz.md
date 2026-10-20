@@ -42,7 +42,7 @@ Kinder der Klassen 3–5 beantworten 10 Quizfragen zu den Planeten des Sonnensys
 - Irrtümer in den falschen Antworten selbst ausgedacht (guess; Creator überlässt es mir).
 - Planeten: die 8 Planeten; Pluto ist nicht dabei (guess; Zwergplanet, für Klasse 3–5 sonst Verwirrung).
 - Bilder und Styling: Die Fragensammlung `src/quiz.json` kennt kein Bildfeld und keine Gestaltung (Schema `additionalProperties: false`), Code ist verboten (`quiz-only-data`). Die Vorlage liefert den Look. Bilder gibt es im ersten Stand nicht (guess: Creator entscheidet noch). Dunkelmodus: aus den Skills nicht ersichtlich, ungeprüft.
-- Repo-Name laut Creator: `mrsimpson/planeten-quiz` (noch nicht angelegt, nichts gepusht: Testmodus ohne GitHub).
+- Repo-Name laut Creator: `mrsimpson/planeten-quiz` (vom Creator angelegt; main, gh-pages, work gepusht, Preview-PR #1).
 - Creator zu Bildern/Kategorien: "dann erst mal weiter mit dem, was möglich ist" → Plan bestätigt, ohne Bilder; Kategorie als Vorsatz im Fragetext bleibt (guess).
 - Kategorien: Das Schema hat kein Kategoriefeld, und mit JavaScript wird die Reihenfolge gemischt. Kategorie sichtbar nur als Vorsatz im Fragetext (z. B. "Größen: …") und als Präfix der `id` (guess; Creator entscheidet noch).
 - Pro Frage `links` mit Wikipedia de und en, dazu `sources` am Ende; `rememberLastResult` aus (guess), dann speichert die App nichts: `fitness.storage: none`.
@@ -261,11 +261,12 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 
 ### Tasks
 
-- [ ] Load skill `lernapps-github-setup`. Put the app on GitHub as it says: repo, branches, Pages, the app committed
+### Completed
+
+- [x] Load skill `lernapps-github-setup`. Put the app on GitHub as it says: repo, branches, Pages, the app committed
       on `work`, the preview pull request. Give the creator the preview link once.
   (Testmodus ohne GitHub: übersprungen; würde Repo, Branches main/work/gh-pages, Pages und Preview-Pull-Request anlegen.)
-
-### Completed
+  (Pages-Einstellung: der Proxy erlaubt die Pages-API nicht, ein Klick des Creators ist nötig.)
 
 - [x] Load skill `lernapps-<archetype>` and the content guide. Questions with options and feedback: also skill
       `lernapps-content-questions`.
