@@ -127,26 +127,40 @@ Kinder der Klassen 3–5 beantworten 10 Quizfragen zu den Planeten des Sonnensys
 
 ### Entry draft
 
-<!-- YAML valid against the entry schema, with its property names. Only known values, never invented. -->
-
 ```yaml
-title: Planeten-Quiz
-subject: Sachunterricht
+# yaml-language-server: $schema=https://lernapps.net/apps/schemas/entry.v1.schema.json
+title:
+  de: Planeten-Quiz
+  en: Planet Quiz
+subject:
+  de: Sachunterricht
+  en: Science
 grades: [3, 4, 5]
-summary: Kinder beantworten zehn Quizfragen zu den Planeten des Sonnensystems, von der Reihenfolge bis zu den Monden. Zu jeder Frage gibt es eine Erklärung und einen Link zum Weiterlesen.
+summary:
+  de: >-
+    Zehn Quizfragen zu den Planeten unseres Sonnensystems: Reihenfolge, Größen, Temperaturen, Umlaufzeiten und Monde.
+    Nach jeder Antwort gibt es eine Erklärung und einen Link zum Weiterlesen.
+  en: >-
+    Ten quiz questions about the planets of our Solar System: order, sizes, temperatures, orbital periods and moons.
+    After every answer there is an explanation and a link for further reading.
+url: https://mrsimpson.github.io/planeten-quiz/
+keywords:
+  - de: Planeten
+    en: planets
+  - de: Sonnensystem
+    en: Solar System
+  - de: Weltraum
+    en: space
 creator:
   name: Quentin Quiz
+source: https://github.com/mrsimpson/planeten-quiz
 fitness:
   account: false
   install: false
   storage: none
   thirdParty: none
-keywords:
-  - Planeten
-  - Sonnensystem
-  - Weltraum
+  checked: false
 ```
-<!-- offen: url (nach Veröffentlichung), source; topics (Einsprungpunkte) nach Veröffentlichung -->
 
 ### Completed
 
@@ -299,20 +313,27 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 
 ### Tasks
 
-- [ ] Load skill `lernapps-github`. Push `work` and see the pull request's checks to green as it says.
-- [ ] Verify the default branch and Pages as the skill says. Note each click only the creator can make.
-- [ ] **Checkpoint:** publish. Show the preview link; ask before the app goes online; put the noted clicks into the
-      same question. Wait for the yes.
-- [ ] Publish as skill `lernapps-github` says: `work` into `main`, the run of `Pages` watched to the end.
-- [ ] Open the address the job `deploy` printed; confirm the app shows. Use that address, never a derived one.
-- [ ] Load skill `lernapps-listing`. Complete the entry draft (e.g. the address).
-- [ ] **Checkpoint:** list. Ask before opening the listing pull request; wait for the yes.
-- [ ] Fill the retrospective.
 - [ ] Commit this plan on `main` and push it: the listing check and the review read it there.
 - [ ] Open the listing pull request as the skill says; see it to "bestanden".
 - [ ] Plan changed since its last push → commit it on `main`, push again.
 
+
+
 ### Completed
+
+- [x] **Checkpoint:** list. Ask before opening the listing pull request; wait for the yes.
+- [x] Fill the retrospective.
+
+- [x] Load skill `lernapps-github`. Push `work` and see the pull request's checks to green as it says.
+- [x] Verify the default branch and Pages as the skill says. Note each click only the creator can make.
+  (Pages-Klick vom Creator gemacht; Default-Branch main.)
+- [x] **Checkpoint:** publish. Show the preview link; ask before the app goes online; put the noted clicks into the
+      same question. Wait for the yes.
+  (Der Creator hat den Pull Request #1 selbst zusammengeführt; Pages lief erfolgreich.)
+- [x] Publish as skill `lernapps-github` says: `work` into `main`, the run of `Pages` watched to the end.
+  (Der Creator hat den Pull Request #1 selbst zusammengeführt; Pages lief erfolgreich.)
+- [x] Open the address the job `deploy` printed; confirm the app shows. Use that address, never a derived one.
+- [x] Load skill `lernapps-listing`. Complete the entry draft (e.g. the address).
 
 ## Retrospective
 
@@ -320,12 +341,17 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 
 ### Phases reached
 
-<!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
+Commit; Checkpoints Recherche, Plan und Veröffentlichung bestanden (Veröffentlichung durch den Merge des Creators), Checkpoint Eintragen mit Ja bestätigt.
 
 ### Creator turns after the plan
 
-<!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
+4: Repo-Name; Repo ist angelegt; Pages eingeschaltet und Pull Request zusammengeführt; Ja zum Eintragen. Ziel war höchstens 3.
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+- Der Quiz-Archetyp kennt weder Bilder noch Styling noch Kategorien; die Anleitung sagte das nicht vor dem Interview. Gewählt: ohne Bilder, Kategorie als Vorsatz im Fragetext.
+- Das Interview-Thema "Irrtümer" und die Begriffe überließ der Creator mir; die Irrtümer sind selbst ausgedacht.
+- Der Start-Commit für `main` und `gh-pages` scheiterte am Pre-commit-Hook (keine `vite.config.ts` im leeren Branch); ich legte beide leeren Commits ohne Hook an, ohne Dateien.
+- Die Pages-API war für mein Werkzeug gesperrt; der Creator hat Pages selbst eingeschaltet.
+- Der Creator hat den Preview-Pull-Request selbst zusammengeführt; der Checkpoint "publish" entfiel damit.
+- Zweitquellen kindgerecht (z. B. serlo.org) nicht gefunden; Lizenz des NASA-Fact-Sheets nicht geprüft.
