@@ -255,13 +255,9 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 
 ### Tasks
 
-- [ ] Load skill `lernapps-check`. Create the app in this plan's folder as it says. `create` keeps this plan. Never
-      write the app by hand.
 - [ ] Load skill `lernapps-github-setup`. Put the app on GitHub as it says: repo, branches, Pages, the app committed
       on `work`, the preview pull request. Give the creator the preview link once.
-- [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method"
-      (`app-content-guide`). `grep -c "FILL IN" .agents/skills/app-content/SKILL.md` prints 0. Commit it before
-      any content.
+  (Testmodus ohne GitHub: übersprungen; würde Repo, Branches main/work/gh-pages, Pages und Preview-Pull-Request anlegen.)
 - [ ] Load skill `lernapps-<archetype>` and the content guide. Questions with options and feedback: also skill
       `lernapps-content-questions`.
 - [ ] Fragensammlung anlegen: Titel, Einleitung, `languages`, `sources`; die Beispielfragen entfernen. Commit.
@@ -278,7 +274,14 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 - [ ] Every box of Explore, Plan and Code ticked.
 - [ ] Set `phase: commit`: change the value line (`grep '^phase:'` prints `phase: commit`).
 
+
 ### Completed
+
+- [x] Load skill `lernapps-check`. Create the app in this plan's folder as it says. `create` keeps this plan. Never
+      write the app by hand.
+- [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method"
+      (`app-content-guide`). `grep -c "FILL IN" .agents/skills/app-content/SKILL.md` prints 0. Commit it before
+      any content.
 
 ## Commit
 
