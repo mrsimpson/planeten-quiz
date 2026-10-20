@@ -313,14 +313,16 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 
 ### Tasks
 
-- [ ] **Checkpoint:** list. Ask before opening the listing pull request; wait for the yes.
-- [ ] Fill the retrospective.
 - [ ] Commit this plan on `main` and push it: the listing check and the review read it there.
 - [ ] Open the listing pull request as the skill says; see it to "bestanden".
 - [ ] Plan changed since its last push → commit it on `main`, push again.
 
 
+
 ### Completed
+
+- [x] **Checkpoint:** list. Ask before opening the listing pull request; wait for the yes.
+- [x] Fill the retrospective.
 
 - [x] Load skill `lernapps-github`. Push `work` and see the pull request's checks to green as it says.
 - [x] Verify the default branch and Pages as the skill says. Note each click only the creator can make.
@@ -339,12 +341,17 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 
 ### Phases reached
 
-<!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
+Commit; Checkpoints Recherche, Plan und Veröffentlichung bestanden (Veröffentlichung durch den Merge des Creators), Checkpoint Eintragen mit Ja bestätigt.
 
 ### Creator turns after the plan
 
-<!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
+4: Repo-Name; Repo ist angelegt; Pages eingeschaltet und Pull Request zusammengeführt; Ja zum Eintragen. Ziel war höchstens 3.
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+- Der Quiz-Archetyp kennt weder Bilder noch Styling noch Kategorien; die Anleitung sagte das nicht vor dem Interview. Gewählt: ohne Bilder, Kategorie als Vorsatz im Fragetext.
+- Das Interview-Thema "Irrtümer" und die Begriffe überließ der Creator mir; die Irrtümer sind selbst ausgedacht.
+- Der Start-Commit für `main` und `gh-pages` scheiterte am Pre-commit-Hook (keine `vite.config.ts` im leeren Branch); ich legte beide leeren Commits ohne Hook an, ohne Dateien.
+- Die Pages-API war für mein Werkzeug gesperrt; der Creator hat Pages selbst eingeschaltet.
+- Der Creator hat den Preview-Pull-Request selbst zusammengeführt; der Checkpoint "publish" entfiel damit.
+- Zweitquellen kindgerecht (z. B. serlo.org) nicht gefunden; Lizenz des NASA-Fact-Sheets nicht geprüft.
