@@ -1,0 +1,627 @@
+{
+  "$schema": "../node_modules/@lernapps/app-templates/runtime/quiz/quiz.v1.schema.json",
+  "languages": ["de", "en"],
+  "title": {
+    "de": "Planeten-Quiz",
+    "en": "Planet Quiz"
+  },
+  "intro": {
+    "de": "Zehn Fragen zu den Planeten unseres Sonnensystems: Aufbau, Größen, Temperaturen, Umlaufzeiten und Monde. Für die Klassen 3 bis 5.",
+    "en": "Ten questions about the planets of our Solar System: structure, sizes, temperatures, orbital periods and moons. For grades 3 to 5."
+  },
+  "questions": [
+    {
+      "id": "aufbau-reihenfolge",
+      "type": "ordering",
+      "text": {
+        "de": "Aufbau: Ordne die Planeten nach ihrem Abstand zur Sonne. Der Planet, der der Sonne am nächsten ist, kommt zuerst.",
+        "en": "Structure: Put the planets in order of their distance from the Sun. The planet closest to the Sun comes first."
+      },
+      "items": [
+        {
+          "de": "Merkur",
+          "en": "Mercury"
+        },
+        {
+          "de": "Venus",
+          "en": "Venus"
+        },
+        {
+          "de": "Erde",
+          "en": "Earth"
+        },
+        {
+          "de": "Mars",
+          "en": "Mars"
+        },
+        {
+          "de": "Jupiter",
+          "en": "Jupiter"
+        },
+        {
+          "de": "Saturn",
+          "en": "Saturn"
+        },
+        {
+          "de": "Uranus",
+          "en": "Uranus"
+        },
+        {
+          "de": "Neptun",
+          "en": "Neptune"
+        }
+      ],
+      "explanation": {
+        "de": "Im Sonnensystem kreisen acht Planeten um die Sonne. Die Erde ist der dritte von innen, der Mars liegt hinter ihr und vor dem Jupiter. Zum Merken hilft ein Satz mit den Anfangsbuchstaben.",
+        "en": "Eight planets orbit the Sun. Earth is the third from the Sun, and Mars comes after it and before Jupiter. A sentence made from the first letters helps to remember the order."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Sonnensystem (Wikipedia)",
+            "en": "Solar System (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Sonnensystem",
+            "en": "https://en.wikipedia.org/wiki/Solar_System"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aufbau-gestein",
+      "type": "multiple-choice",
+      "text": {
+        "de": "Aufbau: Welche Planeten sind Gesteinsplaneten, also aus festem Gestein?",
+        "en": "Structure: Which planets are rocky planets, made of solid rock?"
+      },
+      "options": [
+        {
+          "text": {
+            "de": "Venus",
+            "en": "Venus"
+          },
+          "correct": true,
+          "info": {
+            "de": "Die Venus ist ein Gesteinsplanet. Sie ist fast so groß wie die Erde und hat eine feste Oberfläche.",
+            "en": "Venus is a rocky planet. It is almost as big as Earth and has a solid surface."
+          }
+        },
+        {
+          "text": {
+            "de": "Mars",
+            "en": "Mars"
+          },
+          "correct": true,
+          "info": {
+            "de": "Der Mars ist ein Gesteinsplanet. Seine Oberfläche besteht aus Gestein und rotem Staub.",
+            "en": "Mars is a rocky planet. Its surface is made of rock and red dust."
+          }
+        },
+        {
+          "text": {
+            "de": "Jupiter",
+            "en": "Jupiter"
+          },
+          "correct": false,
+          "info": {
+            "de": "Der Jupiter ist ein Gasplanet. Er besteht vor allem aus Wasserstoff und Helium und hat keine feste Oberfläche wie die Erde.",
+            "en": "Jupiter is a gas giant. It is made mostly of hydrogen and helium and has no solid surface like Earth."
+          }
+        },
+        {
+          "text": {
+            "de": "Neptun",
+            "en": "Neptune"
+          },
+          "correct": false,
+          "info": {
+            "de": "Der Neptun gehört zu den Eisriesen. Er ist sehr weit von der Sonne entfernt und hat keine feste Oberfläche wie die Erde.",
+            "en": "Neptune is an ice giant. It is very far from the Sun and has no solid surface like Earth."
+          }
+        }
+      ],
+      "explanation": {
+        "de": "Die vier inneren Planeten Merkur, Venus, Erde und Mars sind Gesteinsplaneten. Jupiter und Saturn sind Gasplaneten, Uranus und Neptun Eisriesen.",
+        "en": "The four inner planets Mercury, Venus, Earth and Mars are rocky planets. Jupiter and Saturn are gas giants, and Uranus and Neptune are ice giants."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Sonnensystem (Wikipedia)",
+            "en": "Solar System (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Sonnensystem",
+            "en": "https://en.wikipedia.org/wiki/Solar_System"
+          }
+        }
+      ]
+    },
+    {
+      "id": "groessen-groesster",
+      "type": "single-choice",
+      "text": {
+        "de": "Größen: Welcher Planet ist der größte im Sonnensystem?",
+        "en": "Sizes: Which planet is the biggest in the Solar System?"
+      },
+      "options": [
+        {
+          "text": {
+            "de": "Jupiter",
+            "en": "Jupiter"
+          },
+          "correct": true,
+          "info": {
+            "de": "Der Jupiter ist ein Gasplanet. Sein Durchmesser ist gut elfmal so groß wie der der Erde.",
+            "en": "Jupiter is a gas giant. Its diameter is more than eleven times that of Earth."
+          }
+        },
+        {
+          "text": {
+            "de": "Saturn",
+            "en": "Saturn"
+          },
+          "correct": false,
+          "info": {
+            "de": "Der Saturn ist der zweitgrößte Planet. Mit den Ringen sieht er riesig aus, doch ohne sie ist er kleiner als der Jupiter.",
+            "en": "Saturn is the second biggest planet. With its rings it looks huge, but without them it is smaller than Jupiter."
+          }
+        },
+        {
+          "text": {
+            "de": "Neptun",
+            "en": "Neptune"
+          },
+          "correct": false,
+          "info": {
+            "de": "Der Neptun ist ein Eisriese und der äußerste Planet. Er ist viel kleiner als der Jupiter.",
+            "en": "Neptune is an ice giant and the outermost planet. It is much smaller than Jupiter."
+          }
+        },
+        {
+          "text": {
+            "de": "Erde",
+            "en": "Earth"
+          },
+          "correct": false,
+          "info": {
+            "de": "Die Erde ist der größte der vier Gesteinsplaneten. Gegen die Gasplaneten ist sie aber klein.",
+            "en": "Earth is the biggest of the four rocky planets. Next to the gas giants, though, it is small."
+          }
+        }
+      ],
+      "explanation": {
+        "de": "Der Jupiter ist der größte Planet. Der kleinste ist der Merkur.",
+        "en": "Jupiter is the biggest planet. The smallest is Mercury."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Jupiter (Wikipedia)",
+            "en": "Jupiter (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Jupiter_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Jupiter"
+          }
+        },
+        {
+          "title": {
+            "de": "Merkur (Wikipedia)",
+            "en": "Mercury (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Merkur_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "groessen-jupiter-erde",
+      "type": "number",
+      "text": {
+        "de": "Größen: Wie oft passt die Erde ungefähr in den Durchmesser des Jupiters? Bis auf 1 daneben zählt noch als richtig.",
+        "en": "Sizes: About how many times does Earth fit into the diameter of Jupiter? Being off by up to 1 still counts as correct."
+      },
+      "answer": 11,
+      "tolerance": 1,
+      "unit": {
+        "de": "mal",
+        "en": "times"
+      },
+      "mistakes": [
+        {
+          "answer": 2,
+          "message": {
+            "de": "Zu klein: Der Jupiter ist viel mehr als doppelt so breit wie die Erde.",
+            "en": "Too small: Jupiter is much more than twice as wide as Earth."
+          }
+        },
+        {
+          "answer": 100,
+          "message": {
+            "de": "Zu groß: Der Jupiter ist riesig, aber nicht hundertmal so breit wie die Erde.",
+            "en": "Too big: Jupiter is huge, but not a hundred times as wide as Earth."
+          }
+        }
+      ],
+      "explanation": {
+        "de": "Der Jupiter hat einen Durchmesser von rund 143.000 Kilometern, die Erde von rund 12.700 Kilometern. Geteilt ergibt das etwa 11.",
+        "en": "Jupiter's diameter is about 143,000 kilometres and Earth's is about 12,700 kilometres. Divided, that gives about 11."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Jupiter (Wikipedia)",
+            "en": "Jupiter (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Jupiter_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Jupiter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "temperatur-heissester",
+      "type": "single-choice",
+      "text": {
+        "de": "Temperaturen: Welcher Planet ist der heißeste?",
+        "en": "Temperatures: Which planet is the hottest?"
+      },
+      "options": [
+        {
+          "text": {
+            "de": "Venus",
+            "en": "Venus"
+          },
+          "correct": true,
+          "info": {
+            "de": "Auf der Venus ist es im Mittel etwa 464 °C heiß. Ihre dicke Luft aus Kohlendioxid hält die Wärme fest.",
+            "en": "On Venus it is about 464 °C on average. Its thick air of carbon dioxide traps the heat."
+          }
+        },
+        {
+          "text": {
+            "de": "Merkur",
+            "en": "Mercury"
+          },
+          "correct": false,
+          "info": {
+            "de": "Der Merkur ist der Sonne am nächsten, aber ohne richtige Lufthülle. Tagsüber wird es dort bis etwa 430 °C heiß, nachts sinkt es auf etwa −170 °C.",
+            "en": "Mercury is closest to the Sun, but it has hardly any atmosphere. By day it gets up to about 430 °C, at night it drops to about −170 °C."
+          }
+        },
+        {
+          "text": {
+            "de": "Mars",
+            "en": "Mars"
+          },
+          "correct": false,
+          "info": {
+            "de": "Der Mars ist im Mittel etwa −60 °C kalt. Seine Luft ist dünn und speichert kaum Wärme.",
+            "en": "Mars is about −60 °C on average. Its air is thin and stores hardly any heat."
+          }
+        },
+        {
+          "text": {
+            "de": "Jupiter",
+            "en": "Jupiter"
+          },
+          "correct": false,
+          "info": {
+            "de": "Der Jupiter ist weit von der Sonne entfernt. Seine Wolken sind sehr kalt.",
+            "en": "Jupiter is far from the Sun. Its clouds are very cold."
+          }
+        }
+      ],
+      "explanation": {
+        "de": "Die Venus ist heißer als der Merkur, obwohl sie weiter von der Sonne entfernt ist. Der Grund ist der Treibhauseffekt ihrer dicken Lufthülle.",
+        "en": "Venus is hotter than Mercury even though it is farther from the Sun. The reason is the greenhouse effect of its thick atmosphere."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Venus (Wikipedia)",
+            "en": "Venus (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Venus_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Venus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "temperatur-mars",
+      "type": "true-false",
+      "text": {
+        "de": "Temperaturen: Auf dem Mars ist es im Durchschnitt wärmer als auf der Erde.",
+        "en": "Temperatures: On Mars it is warmer on average than on Earth."
+      },
+      "answer": false,
+      "explanation": {
+        "de": "Das stimmt nicht. Auf dem Mars sind es im Mittel etwa −60 °C, auf der Erde etwa 15 °C. Mars ist weiter von der Sonne entfernt und hat nur dünne Luft.",
+        "en": "That is not true. On Mars it is about −60 °C on average, on Earth about 15 °C. Mars is farther from the Sun and has only thin air."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Mars (Wikipedia)",
+            "en": "Mars (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Mars_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Mars"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jahr-was-ist",
+      "type": "single-choice",
+      "text": {
+        "de": "Umlaufzeiten: Was ist ein Jahr auf einem Planeten?",
+        "en": "Orbital periods: What is a year on a planet?"
+      },
+      "options": [
+        {
+          "text": {
+            "de": "Ein Umlauf um die Sonne",
+            "en": "One trip around the Sun"
+          },
+          "correct": true,
+          "info": {
+            "de": "Für einen Umlauf um die Sonne braucht jeder Planet eine andere Zeit. Das ist sein Jahr.",
+            "en": "Every planet needs a different time for one trip around the Sun. That is its year."
+          }
+        },
+        {
+          "text": {
+            "de": "Eine Drehung um die eigene Achse",
+            "en": "One spin around its own axis"
+          },
+          "correct": false,
+          "info": {
+            "de": "Eine Drehung um die eigene Achse ergibt einen Tag, nicht ein Jahr.",
+            "en": "One spin around its own axis makes a day, not a year."
+          }
+        },
+        {
+          "text": {
+            "de": "Ein Umlauf des Mondes um den Planeten",
+            "en": "One trip of a moon around its planet"
+          },
+          "correct": false,
+          "info": {
+            "de": "Das ist die Umlaufzeit eines Mondes. Bei der Erde nennen wir sie einen Monat.",
+            "en": "That is the orbital period of a moon. On Earth we call it a month."
+          }
+        },
+        {
+          "text": {
+            "de": "Immer 365 Tage",
+            "en": "Always 365 days"
+          },
+          "correct": false,
+          "info": {
+            "de": "Ein Jahr der Erde dauert etwa 365 Tage. Auf anderen Planeten dauert ein Jahr kürzer oder länger.",
+            "en": "A year on Earth lasts about 365 days. On other planets a year is shorter or longer."
+          }
+        }
+      ],
+      "explanation": {
+        "de": "Ein Jahr ist die Zeit für einen Umlauf um die Sonne. Weil jeder Planet einen anderen Weg und ein anderes Tempo hat, ist sein Jahr verschieden lang.",
+        "en": "A year is the time for one trip around the Sun. Every planet has a different path and speed, so each has a year of its own length."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Jahr (Wikipedia)",
+            "en": "Year (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Jahr",
+            "en": "https://en.wikipedia.org/wiki/Year"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jahr-reihenfolge",
+      "type": "ordering",
+      "text": {
+        "de": "Umlaufzeiten: Ordne die Planeten nach der Länge ihres Jahres. Das kürzeste Jahr kommt zuerst.",
+        "en": "Orbital periods: Put the planets in order of the length of their year. The shortest year comes first."
+      },
+      "items": [
+        {
+          "de": "Merkur",
+          "en": "Mercury"
+        },
+        {
+          "de": "Mars",
+          "en": "Mars"
+        },
+        {
+          "de": "Jupiter",
+          "en": "Jupiter"
+        },
+        {
+          "de": "Saturn",
+          "en": "Saturn"
+        }
+      ],
+      "explanation": {
+        "de": "Je weiter ein Planet von der Sonne entfernt ist, desto länger ist sein Weg und desto langsamer ist er. Darum ist sein Jahr länger: Merkur braucht etwa 88 Tage, Mars etwa 687 Tage, Jupiter etwa 12 Erdjahre und Saturn etwa 29 Erdjahre.",
+        "en": "The farther a planet is from the Sun, the longer its path and the slower it moves. So its year is longer: Mercury needs about 88 days, Mars about 687 days, Jupiter about 12 Earth years and Saturn about 29 Earth years."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Jahr (Wikipedia)",
+            "en": "Year (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Jahr",
+            "en": "https://en.wikipedia.org/wiki/Year"
+          }
+        },
+        {
+          "title": {
+            "de": "Saturn (Wikipedia)",
+            "en": "Saturn (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Saturn_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Saturn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "monde-ohne",
+      "type": "multiple-choice",
+      "text": {
+        "de": "Monde: Welche Planeten haben keinen Mond?",
+        "en": "Moons: Which planets have no moon?"
+      },
+      "options": [
+        {
+          "text": {
+            "de": "Merkur",
+            "en": "Mercury"
+          },
+          "correct": true,
+          "info": {
+            "de": "Der Merkur hat keinen Mond. Er ist der kleinste Planet und der Sonne am nächsten.",
+            "en": "Mercury has no moon. It is the smallest planet and the closest to the Sun."
+          }
+        },
+        {
+          "text": {
+            "de": "Venus",
+            "en": "Venus"
+          },
+          "correct": true,
+          "info": {
+            "de": "Die Venus hat keinen Mond, obwohl sie fast so groß wie die Erde ist.",
+            "en": "Venus has no moon, even though it is almost as big as Earth."
+          }
+        },
+        {
+          "text": {
+            "de": "Erde",
+            "en": "Earth"
+          },
+          "correct": false,
+          "info": {
+            "de": "Die Erde hat einen Mond. Er umkreist sie in etwa einem Monat.",
+            "en": "Earth has one moon. It goes around Earth in about a month."
+          }
+        },
+        {
+          "text": {
+            "de": "Mars",
+            "en": "Mars"
+          },
+          "correct": false,
+          "info": {
+            "de": "Der Mars hat zwei kleine Monde, Phobos und Deimos.",
+            "en": "Mars has two small moons, Phobos and Deimos."
+          }
+        }
+      ],
+      "explanation": {
+        "de": "Merkur und Venus sind die einzigen Planeten ohne Mond. Alle anderen Planeten haben mindestens einen.",
+        "en": "Mercury and Venus are the only planets without a moon. All other planets have at least one."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Merkur (Wikipedia)",
+            "en": "Mercury (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Merkur_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+          }
+        },
+        {
+          "title": {
+            "de": "Venus (Wikipedia)",
+            "en": "Venus (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Venus_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Venus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "monde-mars",
+      "type": "number",
+      "text": {
+        "de": "Monde: Wie viele Monde hat der Mars?",
+        "en": "Moons: How many moons does Mars have?"
+      },
+      "answer": 2,
+      "tolerance": 0,
+      "unit": {
+        "de": "Monde",
+        "en": "moons"
+      },
+      "mistakes": [
+        {
+          "answer": 1,
+          "message": {
+            "de": "Einen Mond hat die Erde. Beim Mars sind es mehr.",
+            "en": "Earth has one moon. Mars has more."
+          }
+        },
+        {
+          "answer": 0,
+          "message": {
+            "de": "Der Mars hat Monde. Es sind kleine Brocken mit unregelmäßiger Form.",
+            "en": "Mars does have moons. They are small lumps with irregular shapes."
+          }
+        }
+      ],
+      "explanation": {
+        "de": "Der Mars hat zwei kleine Monde, Phobos und Deimos. Sie sind unregelmäßig geformt, ähnlich wie Kartoffeln.",
+        "en": "Mars has two small moons, Phobos and Deimos. They are irregularly shaped, a bit like potatoes."
+      },
+      "links": [
+        {
+          "title": {
+            "de": "Mars (Wikipedia)",
+            "en": "Mars (Wikipedia)"
+          },
+          "url": {
+            "de": "https://de.wikipedia.org/wiki/Mars_(Planet)",
+            "en": "https://en.wikipedia.org/wiki/Mars"
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "de": "NASA Planetary Fact Sheet",
+        "en": "NASA Planetary Fact Sheet"
+      },
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+    },
+    {
+      "title": {
+        "de": "Wikipedia: Sonnensystem, Planetenartikel und Jahr",
+        "en": "Wikipedia: Solar System, planet articles and Year"
+      },
+      "url": "https://de.wikipedia.org/wiki/Sonnensystem"
+    }
+  ]
+}
