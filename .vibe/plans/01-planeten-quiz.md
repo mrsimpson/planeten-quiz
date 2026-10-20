@@ -127,26 +127,40 @@ Kinder der Klassen 3–5 beantworten 10 Quizfragen zu den Planeten des Sonnensys
 
 ### Entry draft
 
-<!-- YAML valid against the entry schema, with its property names. Only known values, never invented. -->
-
 ```yaml
-title: Planeten-Quiz
-subject: Sachunterricht
+# yaml-language-server: $schema=https://lernapps.net/apps/schemas/entry.v1.schema.json
+title:
+  de: Planeten-Quiz
+  en: Planet Quiz
+subject:
+  de: Sachunterricht
+  en: Science
 grades: [3, 4, 5]
-summary: Kinder beantworten zehn Quizfragen zu den Planeten des Sonnensystems, von der Reihenfolge bis zu den Monden. Zu jeder Frage gibt es eine Erklärung und einen Link zum Weiterlesen.
+summary:
+  de: >-
+    Zehn Quizfragen zu den Planeten unseres Sonnensystems: Reihenfolge, Größen, Temperaturen, Umlaufzeiten und Monde.
+    Nach jeder Antwort gibt es eine Erklärung und einen Link zum Weiterlesen.
+  en: >-
+    Ten quiz questions about the planets of our Solar System: order, sizes, temperatures, orbital periods and moons.
+    After every answer there is an explanation and a link for further reading.
+url: https://mrsimpson.github.io/planeten-quiz/
+keywords:
+  - de: Planeten
+    en: planets
+  - de: Sonnensystem
+    en: Solar System
+  - de: Weltraum
+    en: space
 creator:
   name: Quentin Quiz
+source: https://github.com/mrsimpson/planeten-quiz
 fitness:
   account: false
   install: false
   storage: none
   thirdParty: none
-keywords:
-  - Planeten
-  - Sonnensystem
-  - Weltraum
+  checked: false
 ```
-<!-- offen: url (nach Veröffentlichung), source; topics (Einsprungpunkte) nach Veröffentlichung -->
 
 ### Completed
 
@@ -299,20 +313,25 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 
 ### Tasks
 
-- [ ] Load skill `lernapps-github`. Push `work` and see the pull request's checks to green as it says.
-- [ ] Verify the default branch and Pages as the skill says. Note each click only the creator can make.
-- [ ] **Checkpoint:** publish. Show the preview link; ask before the app goes online; put the noted clicks into the
-      same question. Wait for the yes.
-- [ ] Publish as skill `lernapps-github` says: `work` into `main`, the run of `Pages` watched to the end.
-- [ ] Open the address the job `deploy` printed; confirm the app shows. Use that address, never a derived one.
-- [ ] Load skill `lernapps-listing`. Complete the entry draft (e.g. the address).
 - [ ] **Checkpoint:** list. Ask before opening the listing pull request; wait for the yes.
 - [ ] Fill the retrospective.
 - [ ] Commit this plan on `main` and push it: the listing check and the review read it there.
 - [ ] Open the listing pull request as the skill says; see it to "bestanden".
 - [ ] Plan changed since its last push → commit it on `main`, push again.
 
+
 ### Completed
+
+- [x] Load skill `lernapps-github`. Push `work` and see the pull request's checks to green as it says.
+- [x] Verify the default branch and Pages as the skill says. Note each click only the creator can make.
+  (Pages-Klick vom Creator gemacht; Default-Branch main.)
+- [x] **Checkpoint:** publish. Show the preview link; ask before the app goes online; put the noted clicks into the
+      same question. Wait for the yes.
+  (Der Creator hat den Pull Request #1 selbst zusammengeführt; Pages lief erfolgreich.)
+- [x] Publish as skill `lernapps-github` says: `work` into `main`, the run of `Pages` watched to the end.
+  (Der Creator hat den Pull Request #1 selbst zusammengeführt; Pages lief erfolgreich.)
+- [x] Open the address the job `deploy` printed; confirm the app shows. Use that address, never a derived one.
+- [x] Load skill `lernapps-listing`. Complete the entry draft (e.g. the address).
 
 ## Retrospective
 
