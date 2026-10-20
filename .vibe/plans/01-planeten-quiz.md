@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: quiz
 # Current phase. Allowed values: explore, plan, code, commit. Change the value line below, never this comment.
-phase: code
+phase: commit
 # prePushFailures: written by the pre-push hook. Never change it.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks. Never change it.
@@ -135,12 +135,17 @@ grades: [3, 4, 5]
 summary: Kinder beantworten zehn Quizfragen zu den Planeten des Sonnensystems, von der Reihenfolge bis zu den Monden. Zu jeder Frage gibt es eine Erklärung und einen Link zum Weiterlesen.
 creator:
   name: Quentin Quiz
+fitness:
+  account: false
+  install: false
+  storage: none
+  thirdParty: none
 keywords:
   - Planeten
   - Sonnensystem
   - Weltraum
 ```
-<!-- offen: url (nach Veröffentlichung), source, fitness; topics nach Bau -->
+<!-- offen: url (nach Veröffentlichung), source; topics (Einsprungpunkte) nach Veröffentlichung -->
 
 ### Completed
 
@@ -258,24 +263,24 @@ Die Seiten stammen aus der Vorlage; ich schreibe nur die Fragen.
 - [ ] Load skill `lernapps-github-setup`. Put the app on GitHub as it says: repo, branches, Pages, the app committed
       on `work`, the preview pull request. Give the creator the preview link once.
   (Testmodus ohne GitHub: übersprungen; würde Repo, Branches main/work/gh-pages, Pages und Preview-Pull-Request anlegen.)
-- [ ] Load skill `lernapps-<archetype>` and the content guide. Questions with options and feedback: also skill
-      `lernapps-content-questions`.
-- [ ] Fragensammlung anlegen: Titel, Einleitung, `languages`, `sources`; die Beispielfragen entfernen. Commit.
-- [ ] Kategorie Aufbau: Fragen 1–2, de und en, mit Links und `info`. Commit, push `work`.
-- [ ] Kategorie Größen: Fragen 3–4. Commit, push `work`.
-- [ ] Kategorie Temperaturen: Fragen 5–6. Commit, push `work`.
-- [ ] Kategorie Umlaufzeiten: Fragen 7–8. Commit, push `work`.
-- [ ] Kategorie Monde: Fragen 9–10. Commit, push `work`.
-- [ ] Jeden Link öffnen, jede Zahl gegen die Quelle prüfen, Englisch vollständig. Commit.
-- [ ] The content guide matches what was built (`app-content-matches`).
-- [ ] `npx lernapps check` passes.
-- [ ] Look at a screenshot of every screen and state (start, each mode, pause, end), desktop and 360 px. Compare
-      each with the confirmed sketches.
-- [ ] Every box of Explore, Plan and Code ticked.
-- [ ] Set `phase: commit`: change the value line (`grep '^phase:'` prints `phase: commit`).
-
 
 ### Completed
+
+- [x] Load skill `lernapps-<archetype>` and the content guide. Questions with options and feedback: also skill
+      `lernapps-content-questions`.
+- [x] Fragensammlung anlegen: Titel, Einleitung, `languages`, `sources`; die Beispielfragen entfernen. Commit.
+- [x] Kategorie Aufbau: Fragen 1–2, de und en, mit Links und `info`. Commit, push `work`.
+- [x] Kategorie Größen: Fragen 3–4. Commit, push `work`.
+- [x] Kategorie Temperaturen: Fragen 5–6. Commit, push `work`.
+- [x] Kategorie Umlaufzeiten: Fragen 7–8. Commit, push `work`.
+- [x] Kategorie Monde: Fragen 9–10. Commit, push `work`.
+- [x] Jeden Link öffnen, jede Zahl gegen die Quelle prüfen, Englisch vollständig. Commit.
+- [x] The content guide matches what was built (`app-content-matches`).
+- [x] `npx lernapps check` passes.
+- [x] Look at a screenshot of every screen and state (start, each mode, pause, end), desktop and 360 px. Compare
+      each with the confirmed sketches.
+- [x] Every box of Explore, Plan and Code ticked.
+- [x] Set `phase: commit`: change the value line (`grep '^phase:'` prints `phase: commit`).
 
 - [x] Load skill `lernapps-check`. Create the app in this plan's folder as it says. `create` keeps this plan. Never
       write the app by hand.
