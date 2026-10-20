@@ -42,6 +42,7 @@ Kinder der Klassen 3–5 beantworten 10 Quizfragen zu den Planeten des Sonnensys
 - Irrtümer in den falschen Antworten selbst ausgedacht (guess; Creator überlässt es mir).
 - Planeten: die 8 Planeten; Pluto ist nicht dabei (guess; Zwergplanet, für Klasse 3–5 sonst Verwirrung).
 - Bilder und Styling: Die Fragensammlung `src/quiz.json` kennt kein Bildfeld und keine Gestaltung (Schema `additionalProperties: false`), Code ist verboten (`quiz-only-data`). Die Vorlage liefert den Look. Bilder gibt es im ersten Stand nicht (guess: Creator entscheidet noch). Dunkelmodus: aus den Skills nicht ersichtlich, ungeprüft.
+- Repo-Name laut Creator: `mrsimpson/planeten-quiz` (noch nicht angelegt, nichts gepusht: Testmodus ohne GitHub).
 - Creator zu Bildern/Kategorien: "dann erst mal weiter mit dem, was möglich ist" → Plan bestätigt, ohne Bilder; Kategorie als Vorsatz im Fragetext bleibt (guess).
 - Kategorien: Das Schema hat kein Kategoriefeld, und mit JavaScript wird die Reihenfolge gemischt. Kategorie sichtbar nur als Vorsatz im Fragetext (z. B. "Größen: …") und als Präfix der `id` (guess; Creator entscheidet noch).
 - Pro Frage `links` mit Wikipedia de und en, dazu `sources` am Ende; `rememberLastResult` aus (guess), dann speichert die App nichts: `fitness.storage: none`.
@@ -82,7 +83,7 @@ Kinder der Klassen 3–5 beantworten 10 Quizfragen zu den Planeten des Sonnensys
 - Wikipedia, Saturn (Planet), https://de.wikipedia.org/wiki/Saturn_(Planet) (verified: 29,4475 Jahre, mittlere Dichte 0,687 g/cm³).
 - Nicht gefunden/ungeprüft: serlo.org und kindgerechte Zweitquellen (z. B. Sachunterricht-Portale) noch nicht geöffnet; Lizenzen der Texte und Bilder (Wikipedia CC BY-SA, NASA-Bilder) vor Nutzung prüfen.
 
-**Offen:** Styling, Bilder und Dunkelmodus im Quiz-Archetyp (Skill fehlt); Repo-Name. Creator: Quentin Quiz. Suchwörter: Creator überlässt es mir ("Den rest schaffst Du schon"), Checkpoint Recherche damit als bestätigt gewertet, keine Änderungswünsche.
+**Offen:** Repo `mrsimpson/planeten-quiz` anlegen und Pages einrichten (GitHub-Schritt); Styling, Bilder und Dunkelmodus im Quiz-Archetyp (Skill fehlt); Repo-Name. Creator: Quentin Quiz. Suchwörter: Creator überlässt es mir ("Den rest schaffst Du schon"), Checkpoint Recherche damit als bestätigt gewertet, keine Änderungswünsche.
 
 ## Explore
 
