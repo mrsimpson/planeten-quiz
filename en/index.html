@@ -3,29 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="module" crossorigin src="../assets/index-ByV-8Cdi.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/index-DE4NgSA1.css">
+    <script type="module" crossorigin src="../assets/index-6Q24KxAP.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/index-CN12dEkZ.css">
       <title>Planet Quiz</title>
     <meta name="description" content="Ten questions about the planets of our Solar System: structure, sizes, temperatures, orbital periods and moons. For grades 3 to 5." />
     <link rel="alternate" hreflang="de" href="../" />
     <link rel="alternate" hreflang="en" href="../en/" />
   </head>
   <body>
-    <nav class="quiz-languages" aria-label="Language"><ul><li><a href="../" hreflang="de" lang="de">Deutsch</a></li><li><a href="../en/" hreflang="en" lang="en" aria-current="page">English</a></li></ul></nav>
+    <header class="page-header"><nav class="page-languages" aria-label="Language"><ul><li><a href="../" hreflang="de" lang="de">Deutsch</a></li><li><a href="../en/" hreflang="en" lang="en" aria-current="page">English</a></li></ul></nav></header>
 <main class="quiz" id="quiz">
 <h1>Planet Quiz</h1>
 <p class="quiz-intro">Ten questions about the planets of our Solar System: structure, sizes, temperatures, orbital periods and moons. For grades 3 to 5.</p>
 <p class="quiz-howto">Answer the questions one by one. After each answer you see whether it is right and learn more about every answer. At the end you see your result.</p>
 <noscript><p>Without JavaScript you can read all questions. The solutions, with more on every answer, are at the end of the page.</p></noscript>
 <h2 class="quiz-heading">Questions</h2>
+<form class="quiz-start" hidden><p><label for="quiz-count">How many questions do you want to answer?</label> <input id="quiz-count" type="number" inputmode="numeric" min="1" max="10" value="10" required> <span>of 10</span></p><p><button type="submit">Start</button></p></form>
 <p class="quiz-progress" hidden></p>
 <ol class="quiz-questions">
-<li class="quiz-question" id="frage-aufbau-reihenfolge" data-id="aufbau-reihenfolge" data-type="ordering">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-aufbau-reihenfolge" data-id="aufbau-reihenfolge" data-type="ordering">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Structure: Put the planets in order of their distance from the Sun. The planet closest to the Sun comes first.</legend>
-<p class="quiz-hint">Give each entry its place: 1 for the first.</p>
-<ul class="quiz-pairs">
+<legend class="question-text">Structure: Put the planets in order of their distance from the Sun. The planet closest to the Sun comes first.</legend>
+<p class="question-hint">Give each entry its place: 1 for the first.</p>
+<ul class="question-pairs">
 <li><label><span>Neptune</span> <select name="frage-aufbau-reihenfolge-7" data-item="7"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option><option value="3">Place 4</option><option value="4">Place 5</option><option value="5">Place 6</option><option value="6">Place 7</option><option value="7">Place 8</option></select></label></li>
 <li><label><span>Saturn</span> <select name="frage-aufbau-reihenfolge-5" data-item="5"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option><option value="3">Place 4</option><option value="4">Place 5</option><option value="5">Place 6</option><option value="6">Place 7</option><option value="7">Place 8</option></select></label></li>
 <li><label><span>Mercury</span> <select name="frage-aufbau-reihenfolge-0" data-item="0"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option><option value="3">Place 4</option><option value="4">Place 5</option><option value="5">Place 6</option><option value="6">Place 7</option><option value="7">Place 8</option></select></label></li>
@@ -36,228 +37,228 @@
 <li><label><span>Uranus</span> <select name="frage-aufbau-reihenfolge-6" data-item="6"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option><option value="3">Place 4</option><option value="4">Place 5</option><option value="5">Place 6</option><option value="6">Place 7</option><option value="7">Place 8</option></select></label></li>
 </ul>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
 <p><strong>Right answer:</strong> 1. Mercury, 2. Venus, 3. Earth, 4. Mars, 5. Jupiter, 6. Saturn, 7. Uranus, 8. Neptune</p>
-<p class="quiz-explanation">Eight planets orbit the Sun. Earth is the third from the Sun, and Mars comes after it and before Jupiter. A sentence made from the first letters helps to remember the order.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Eight planets orbit the Sun. Earth is the third from the Sun, and Mars comes after it and before Jupiter. A sentence made from the first letters helps to remember the order.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Solar_System" rel="noopener">Solar System (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-aufbau-gestein" data-id="aufbau-gestein" data-type="multiple-choice">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-aufbau-gestein" data-id="aufbau-gestein" data-type="multiple-choice">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Structure: Which planets are rocky planets, made of solid rock?</legend>
-<label class="quiz-option"><input type="checkbox" name="frage-aufbau-gestein" value="0"> <span>Venus</span></label>
-<label class="quiz-option"><input type="checkbox" name="frage-aufbau-gestein" value="1"> <span>Mars</span></label>
-<label class="quiz-option"><input type="checkbox" name="frage-aufbau-gestein" value="2"> <span>Jupiter</span></label>
-<label class="quiz-option"><input type="checkbox" name="frage-aufbau-gestein" value="3"> <span>Neptune</span></label>
+<legend class="question-text">Structure: Which planets are rocky planets, made of solid rock?</legend>
+<label class="question-option"><input type="checkbox" name="frage-aufbau-gestein" value="0"> <span>Venus</span></label>
+<label class="question-option"><input type="checkbox" name="frage-aufbau-gestein" value="1"> <span>Mars</span></label>
+<label class="question-option"><input type="checkbox" name="frage-aufbau-gestein" value="2"> <span>Jupiter</span></label>
+<label class="question-option"><input type="checkbox" name="frage-aufbau-gestein" value="3"> <span>Neptune</span></label>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>Venus</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Venus is a rocky planet. It is almost as big as Earth and has a solid surface.</p></li>
-<li class="quiz-info quiz-info-right" data-option="1"><p class="quiz-info-head"><strong>Mars</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Mars is a rocky planet. Its surface is made of rock and red dust.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>Jupiter</strong></p><p>Jupiter is a gas giant. It is made mostly of hydrogen and helium and has no solid surface like Earth.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Neptune</strong></p><p>Neptune is an ice giant. It is very far from the Sun and has no solid surface like Earth.</p></li>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Venus</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Venus is a rocky planet. It is almost as big as Earth and has a solid surface.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Mars</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Mars is a rocky planet. Its surface is made of rock and red dust.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Jupiter</strong></p><p>Jupiter is a gas giant. It is made mostly of hydrogen and helium and has no solid surface like Earth.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Neptune</strong></p><p>Neptune is an ice giant. It is very far from the Sun and has no solid surface like Earth.</p></li>
 </ul>
-<p class="quiz-explanation">The four inner planets Mercury, Venus, Earth and Mars are rocky planets. Jupiter and Saturn are gas giants, and Uranus and Neptune are ice giants.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">The four inner planets Mercury, Venus, Earth and Mars are rocky planets. Jupiter and Saturn are gas giants, and Uranus and Neptune are ice giants.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Solar_System" rel="noopener">Solar System (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-groessen-groesster" data-id="groessen-groesster" data-type="single-choice">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-groessen-groesster" data-id="groessen-groesster" data-type="single-choice">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Sizes: Which planet is the biggest in the Solar System?</legend>
-<label class="quiz-option"><input type="radio" name="frage-groessen-groesster" value="0"> <span>Jupiter</span></label>
-<label class="quiz-option"><input type="radio" name="frage-groessen-groesster" value="1"> <span>Saturn</span></label>
-<label class="quiz-option"><input type="radio" name="frage-groessen-groesster" value="2"> <span>Neptune</span></label>
-<label class="quiz-option"><input type="radio" name="frage-groessen-groesster" value="3"> <span>Earth</span></label>
+<legend class="question-text">Sizes: Which planet is the biggest in the Solar System?</legend>
+<label class="question-option"><input type="radio" name="frage-groessen-groesster" value="0"> <span>Jupiter</span></label>
+<label class="question-option"><input type="radio" name="frage-groessen-groesster" value="1"> <span>Saturn</span></label>
+<label class="question-option"><input type="radio" name="frage-groessen-groesster" value="2"> <span>Neptune</span></label>
+<label class="question-option"><input type="radio" name="frage-groessen-groesster" value="3"> <span>Earth</span></label>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>Jupiter</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Jupiter is a gas giant. Its diameter is more than eleven times that of Earth.</p></li>
-<li class="quiz-info" data-option="1"><p class="quiz-info-head"><strong>Saturn</strong></p><p>Saturn is the second biggest planet. With its rings it looks huge, but without them it is smaller than Jupiter.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>Neptune</strong></p><p>Neptune is an ice giant and the outermost planet. It is much smaller than Jupiter.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Earth</strong></p><p>Earth is the biggest of the four rocky planets. Next to the gas giants, though, it is small.</p></li>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Jupiter</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Jupiter is a gas giant. Its diameter is more than eleven times that of Earth.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Saturn</strong></p><p>Saturn is the second biggest planet. With its rings it looks huge, but without them it is smaller than Jupiter.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Neptune</strong></p><p>Neptune is an ice giant and the outermost planet. It is much smaller than Jupiter.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Earth</strong></p><p>Earth is the biggest of the four rocky planets. Next to the gas giants, though, it is small.</p></li>
 </ul>
-<p class="quiz-explanation">Jupiter is the biggest planet. The smallest is Mercury.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Jupiter is the biggest planet. The smallest is Mercury.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Jupiter" rel="noopener">Jupiter (Wikipedia)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Mercury_(planet)" rel="noopener">Mercury (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-groessen-jupiter-erde" data-id="groessen-jupiter-erde" data-type="number">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-groessen-jupiter-erde" data-id="groessen-jupiter-erde" data-type="number">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Sizes: About how many times does Earth fit into the diameter of Jupiter? Being off by up to 1 still counts as correct.</legend>
-<label class="quiz-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-groessen-jupiter-erde" aria-describedby="frage-groessen-jupiter-erde-unit"> <span id="frage-groessen-jupiter-erde-unit">times</span> </label>
+<legend class="question-text">Sizes: About how many times does Earth fit into the diameter of Jupiter? Being off by up to 1 still counts as correct.</legend>
+<label class="question-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-groessen-jupiter-erde" aria-describedby="frage-groessen-jupiter-erde-unit"> <span id="frage-groessen-jupiter-erde-unit">times</span> </label>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
 <p><strong>Right answer:</strong> 11 times (allowed difference: 1 times)</p>
-<p class="quiz-explanation">Jupiter's diameter is about 143,000 kilometres and Earth's is about 12,700 kilometres. Divided, that gives about 11.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Jupiter's diameter is about 143,000 kilometres and Earth's is about 12,700 kilometres. Divided, that gives about 11.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Jupiter" rel="noopener">Jupiter (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-temperatur-heissester" data-id="temperatur-heissester" data-type="single-choice">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-temperatur-heissester" data-id="temperatur-heissester" data-type="single-choice">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Temperatures: Which planet is the hottest?</legend>
-<label class="quiz-option"><input type="radio" name="frage-temperatur-heissester" value="0"> <span>Venus</span></label>
-<label class="quiz-option"><input type="radio" name="frage-temperatur-heissester" value="1"> <span>Mercury</span></label>
-<label class="quiz-option"><input type="radio" name="frage-temperatur-heissester" value="2"> <span>Mars</span></label>
-<label class="quiz-option"><input type="radio" name="frage-temperatur-heissester" value="3"> <span>Jupiter</span></label>
+<legend class="question-text">Temperatures: Which planet is the hottest?</legend>
+<label class="question-option"><input type="radio" name="frage-temperatur-heissester" value="0"> <span>Venus</span></label>
+<label class="question-option"><input type="radio" name="frage-temperatur-heissester" value="1"> <span>Mercury</span></label>
+<label class="question-option"><input type="radio" name="frage-temperatur-heissester" value="2"> <span>Mars</span></label>
+<label class="question-option"><input type="radio" name="frage-temperatur-heissester" value="3"> <span>Jupiter</span></label>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>Venus</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>On Venus it is about 464 °C on average. Its thick air of carbon dioxide traps the heat.</p></li>
-<li class="quiz-info" data-option="1"><p class="quiz-info-head"><strong>Mercury</strong></p><p>Mercury is closest to the Sun, but it has hardly any atmosphere. By day it gets up to about 430 °C, at night it drops to about −170 °C.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>Mars</strong></p><p>Mars is about −60 °C on average. Its air is thin and stores hardly any heat.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Jupiter</strong></p><p>Jupiter is far from the Sun. Its clouds are very cold.</p></li>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Venus</strong> <span class="question-badge question-badge-right">right answer</span></p><p>On Venus it is about 464 °C on average. Its thick air of carbon dioxide traps the heat.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Mercury</strong></p><p>Mercury is closest to the Sun, but it has hardly any atmosphere. By day it gets up to about 430 °C, at night it drops to about −170 °C.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Mars</strong></p><p>Mars is about −60 °C on average. Its air is thin and stores hardly any heat.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Jupiter</strong></p><p>Jupiter is far from the Sun. Its clouds are very cold.</p></li>
 </ul>
-<p class="quiz-explanation">Venus is hotter than Mercury even though it is farther from the Sun. The reason is the greenhouse effect of its thick atmosphere.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Venus is hotter than Mercury even though it is farther from the Sun. The reason is the greenhouse effect of its thick atmosphere.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Venus" rel="noopener">Venus (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-temperatur-mars" data-id="temperatur-mars" data-type="true-false">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-temperatur-mars" data-id="temperatur-mars" data-type="true-false">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Temperatures: On Mars it is warmer on average than on Earth.</legend>
-<label class="quiz-option"><input type="radio" name="frage-temperatur-mars" value="true"> <span>True</span></label>
-<label class="quiz-option"><input type="radio" name="frage-temperatur-mars" value="false"> <span>False</span></label>
+<legend class="question-text">Temperatures: On Mars it is warmer on average than on Earth.</legend>
+<label class="question-option"><input type="radio" name="frage-temperatur-mars" value="true"> <span>True</span></label>
+<label class="question-option"><input type="radio" name="frage-temperatur-mars" value="false"> <span>False</span></label>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
 <p><strong>Right answer:</strong> The statement is false.</p>
-<p class="quiz-explanation">That is not true. On Mars it is about −60 °C on average, on Earth about 15 °C. Mars is farther from the Sun and has only thin air.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">That is not true. On Mars it is about −60 °C on average, on Earth about 15 °C. Mars is farther from the Sun and has only thin air.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Mars" rel="noopener">Mars (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-jahr-was-ist" data-id="jahr-was-ist" data-type="single-choice">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-jahr-was-ist" data-id="jahr-was-ist" data-type="single-choice">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Orbital periods: What is a year on a planet?</legend>
-<label class="quiz-option"><input type="radio" name="frage-jahr-was-ist" value="0"> <span>One trip around the Sun</span></label>
-<label class="quiz-option"><input type="radio" name="frage-jahr-was-ist" value="1"> <span>One spin around its own axis</span></label>
-<label class="quiz-option"><input type="radio" name="frage-jahr-was-ist" value="2"> <span>One trip of a moon around its planet</span></label>
-<label class="quiz-option"><input type="radio" name="frage-jahr-was-ist" value="3"> <span>Always 365 days</span></label>
+<legend class="question-text">Orbital periods: What is a year on a planet?</legend>
+<label class="question-option"><input type="radio" name="frage-jahr-was-ist" value="0"> <span>One trip around the Sun</span></label>
+<label class="question-option"><input type="radio" name="frage-jahr-was-ist" value="1"> <span>One spin around its own axis</span></label>
+<label class="question-option"><input type="radio" name="frage-jahr-was-ist" value="2"> <span>One trip of a moon around its planet</span></label>
+<label class="question-option"><input type="radio" name="frage-jahr-was-ist" value="3"> <span>Always 365 days</span></label>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>One trip around the Sun</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Every planet needs a different time for one trip around the Sun. That is its year.</p></li>
-<li class="quiz-info" data-option="1"><p class="quiz-info-head"><strong>One spin around its own axis</strong></p><p>One spin around its own axis makes a day, not a year.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>One trip of a moon around its planet</strong></p><p>That is the orbital period of a moon. On Earth we call it a month.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Always 365 days</strong></p><p>A year on Earth lasts about 365 days. On other planets a year is shorter or longer.</p></li>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>One trip around the Sun</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Every planet needs a different time for one trip around the Sun. That is its year.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>One spin around its own axis</strong></p><p>One spin around its own axis makes a day, not a year.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>One trip of a moon around its planet</strong></p><p>That is the orbital period of a moon. On Earth we call it a month.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Always 365 days</strong></p><p>A year on Earth lasts about 365 days. On other planets a year is shorter or longer.</p></li>
 </ul>
-<p class="quiz-explanation">A year is the time for one trip around the Sun. Every planet has a different path and speed, so each has a year of its own length.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">A year is the time for one trip around the Sun. Every planet has a different path and speed, so each has a year of its own length.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Year" rel="noopener">Year (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-jahr-reihenfolge" data-id="jahr-reihenfolge" data-type="ordering">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-jahr-reihenfolge" data-id="jahr-reihenfolge" data-type="ordering">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Orbital periods: Put the planets in order of the length of their year. The shortest year comes first.</legend>
-<p class="quiz-hint">Give each entry its place: 1 for the first.</p>
-<ul class="quiz-pairs">
+<legend class="question-text">Orbital periods: Put the planets in order of the length of their year. The shortest year comes first.</legend>
+<p class="question-hint">Give each entry its place: 1 for the first.</p>
+<ul class="question-pairs">
 <li><label><span>Mercury</span> <select name="frage-jahr-reihenfolge-0" data-item="0"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option><option value="3">Place 4</option></select></label></li>
 <li><label><span>Saturn</span> <select name="frage-jahr-reihenfolge-3" data-item="3"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option><option value="3">Place 4</option></select></label></li>
 <li><label><span>Jupiter</span> <select name="frage-jahr-reihenfolge-2" data-item="2"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option><option value="3">Place 4</option></select></label></li>
 <li><label><span>Mars</span> <select name="frage-jahr-reihenfolge-1" data-item="1"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option><option value="3">Place 4</option></select></label></li>
 </ul>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
 <p><strong>Right answer:</strong> 1. Mercury, 2. Mars, 3. Jupiter, 4. Saturn</p>
-<p class="quiz-explanation">The farther a planet is from the Sun, the longer its path and the slower it moves. So its year is longer: Mercury needs about 88 days, Mars about 687 days, Jupiter about 12 Earth years and Saturn about 29 Earth years.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">The farther a planet is from the Sun, the longer its path and the slower it moves. So its year is longer: Mercury needs about 88 days, Mars about 687 days, Jupiter about 12 Earth years and Saturn about 29 Earth years.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Year" rel="noopener">Year (Wikipedia)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Saturn" rel="noopener">Saturn (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-monde-ohne" data-id="monde-ohne" data-type="multiple-choice">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-monde-ohne" data-id="monde-ohne" data-type="multiple-choice">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Moons: Which planets have no moon?</legend>
-<label class="quiz-option"><input type="checkbox" name="frage-monde-ohne" value="0"> <span>Mercury</span></label>
-<label class="quiz-option"><input type="checkbox" name="frage-monde-ohne" value="1"> <span>Venus</span></label>
-<label class="quiz-option"><input type="checkbox" name="frage-monde-ohne" value="2"> <span>Earth</span></label>
-<label class="quiz-option"><input type="checkbox" name="frage-monde-ohne" value="3"> <span>Mars</span></label>
+<legend class="question-text">Moons: Which planets have no moon?</legend>
+<label class="question-option"><input type="checkbox" name="frage-monde-ohne" value="0"> <span>Mercury</span></label>
+<label class="question-option"><input type="checkbox" name="frage-monde-ohne" value="1"> <span>Venus</span></label>
+<label class="question-option"><input type="checkbox" name="frage-monde-ohne" value="2"> <span>Earth</span></label>
+<label class="question-option"><input type="checkbox" name="frage-monde-ohne" value="3"> <span>Mars</span></label>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>Mercury</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Mercury has no moon. It is the smallest planet and the closest to the Sun.</p></li>
-<li class="quiz-info quiz-info-right" data-option="1"><p class="quiz-info-head"><strong>Venus</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Venus has no moon, even though it is almost as big as Earth.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>Earth</strong></p><p>Earth has one moon. It goes around Earth in about a month.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Mars</strong></p><p>Mars has two small moons, Phobos and Deimos.</p></li>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Mercury</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Mercury has no moon. It is the smallest planet and the closest to the Sun.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Venus</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Venus has no moon, even though it is almost as big as Earth.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Earth</strong></p><p>Earth has one moon. It goes around Earth in about a month.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Mars</strong></p><p>Mars has two small moons, Phobos and Deimos.</p></li>
 </ul>
-<p class="quiz-explanation">Mercury and Venus are the only planets without a moon. All other planets have at least one.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Mercury and Venus are the only planets without a moon. All other planets have at least one.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Mercury_(planet)" rel="noopener">Mercury (Wikipedia)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Venus" rel="noopener">Venus (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
-<li class="quiz-question" id="frage-monde-mars" data-id="monde-mars" data-type="number">
-<form class="quiz-form" novalidate>
+<li class="question" id="frage-monde-mars" data-id="monde-mars" data-type="number">
+<form class="question-form" novalidate>
 <fieldset>
-<legend class="quiz-text">Moons: How many moons does Mars have?</legend>
-<label class="quiz-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-monde-mars" aria-describedby="frage-monde-mars-unit"> <span id="frage-monde-mars-unit">moons</span> </label>
+<legend class="question-text">Moons: How many moons does Mars have?</legend>
+<label class="question-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-monde-mars" aria-describedby="frage-monde-mars-unit"> <span id="frage-monde-mars-unit">moons</span> </label>
 </fieldset>
-<div class="quiz-feedback" role="status"></div>
-<div class="quiz-reveal" hidden>
+<div class="question-feedback" role="status"></div>
+<div class="question-reveal" hidden>
 <p><strong>Right answer:</strong> 2 moons</p>
-<p class="quiz-explanation">Mars has two small moons, Phobos and Deimos. They are irregularly shaped, a bit like potatoes.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Mars has two small moons, Phobos and Deimos. They are irregularly shaped, a bit like potatoes.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Mars" rel="noopener">Mars (Wikipedia)</a></li>
 </ul>
 </div>
-<p class="quiz-actions" hidden><button type="submit" class="quiz-check">Check</button> <button type="button" class="quiz-next" hidden>Next question</button></p>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button> <button type="button" class="question-next" hidden>Next question</button></p>
 </form>
 </li>
 </ol>
@@ -265,7 +266,7 @@
 <h2>Result</h2>
 <p class="quiz-score"></p>
 <p class="quiz-last" hidden></p>
-<p><a class="quiz-restart" href="./">Again, in a new order</a></p>
+<p><a class="quiz-restart" href="./">Again</a></p>
 </section>
 <section class="quiz-solutions" id="loesungen">
 <h2>Solutions</h2>
@@ -273,39 +274,39 @@
 <li class="quiz-solution" id="loesung-aufbau-reihenfolge">
 <h3>Structure: Put the planets in order of their distance from the Sun. The planet closest to the Sun comes first.</h3>
 <p><strong>Right answer:</strong> 1. Mercury, 2. Venus, 3. Earth, 4. Mars, 5. Jupiter, 6. Saturn, 7. Uranus, 8. Neptune</p>
-<p class="quiz-explanation">Eight planets orbit the Sun. Earth is the third from the Sun, and Mars comes after it and before Jupiter. A sentence made from the first letters helps to remember the order.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Eight planets orbit the Sun. Earth is the third from the Sun, and Mars comes after it and before Jupiter. A sentence made from the first letters helps to remember the order.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Solar_System" rel="noopener">Solar System (Wikipedia)</a></li>
 </ul>
 <p><a href="#frage-aufbau-reihenfolge">To the question</a></p>
 </li>
 <li class="quiz-solution" id="loesung-aufbau-gestein">
 <h3>Structure: Which planets are rocky planets, made of solid rock?</h3>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>Venus</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Venus is a rocky planet. It is almost as big as Earth and has a solid surface.</p></li>
-<li class="quiz-info quiz-info-right" data-option="1"><p class="quiz-info-head"><strong>Mars</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Mars is a rocky planet. Its surface is made of rock and red dust.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>Jupiter</strong></p><p>Jupiter is a gas giant. It is made mostly of hydrogen and helium and has no solid surface like Earth.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Neptune</strong></p><p>Neptune is an ice giant. It is very far from the Sun and has no solid surface like Earth.</p></li>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Venus</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Venus is a rocky planet. It is almost as big as Earth and has a solid surface.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Mars</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Mars is a rocky planet. Its surface is made of rock and red dust.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Jupiter</strong></p><p>Jupiter is a gas giant. It is made mostly of hydrogen and helium and has no solid surface like Earth.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Neptune</strong></p><p>Neptune is an ice giant. It is very far from the Sun and has no solid surface like Earth.</p></li>
 </ul>
-<p class="quiz-explanation">The four inner planets Mercury, Venus, Earth and Mars are rocky planets. Jupiter and Saturn are gas giants, and Uranus and Neptune are ice giants.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">The four inner planets Mercury, Venus, Earth and Mars are rocky planets. Jupiter and Saturn are gas giants, and Uranus and Neptune are ice giants.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Solar_System" rel="noopener">Solar System (Wikipedia)</a></li>
 </ul>
 <p><a href="#frage-aufbau-gestein">To the question</a></p>
 </li>
 <li class="quiz-solution" id="loesung-groessen-groesster">
 <h3>Sizes: Which planet is the biggest in the Solar System?</h3>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>Jupiter</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Jupiter is a gas giant. Its diameter is more than eleven times that of Earth.</p></li>
-<li class="quiz-info" data-option="1"><p class="quiz-info-head"><strong>Saturn</strong></p><p>Saturn is the second biggest planet. With its rings it looks huge, but without them it is smaller than Jupiter.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>Neptune</strong></p><p>Neptune is an ice giant and the outermost planet. It is much smaller than Jupiter.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Earth</strong></p><p>Earth is the biggest of the four rocky planets. Next to the gas giants, though, it is small.</p></li>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Jupiter</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Jupiter is a gas giant. Its diameter is more than eleven times that of Earth.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Saturn</strong></p><p>Saturn is the second biggest planet. With its rings it looks huge, but without them it is smaller than Jupiter.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Neptune</strong></p><p>Neptune is an ice giant and the outermost planet. It is much smaller than Jupiter.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Earth</strong></p><p>Earth is the biggest of the four rocky planets. Next to the gas giants, though, it is small.</p></li>
 </ul>
-<p class="quiz-explanation">Jupiter is the biggest planet. The smallest is Mercury.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Jupiter is the biggest planet. The smallest is Mercury.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Jupiter" rel="noopener">Jupiter (Wikipedia)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Mercury_(planet)" rel="noopener">Mercury (Wikipedia)</a></li>
 </ul>
@@ -314,24 +315,24 @@
 <li class="quiz-solution" id="loesung-groessen-jupiter-erde">
 <h3>Sizes: About how many times does Earth fit into the diameter of Jupiter? Being off by up to 1 still counts as correct.</h3>
 <p><strong>Right answer:</strong> 11 times (allowed difference: 1 times)</p>
-<p class="quiz-explanation">Jupiter's diameter is about 143,000 kilometres and Earth's is about 12,700 kilometres. Divided, that gives about 11.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Jupiter's diameter is about 143,000 kilometres and Earth's is about 12,700 kilometres. Divided, that gives about 11.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Jupiter" rel="noopener">Jupiter (Wikipedia)</a></li>
 </ul>
 <p><a href="#frage-groessen-jupiter-erde">To the question</a></p>
 </li>
 <li class="quiz-solution" id="loesung-temperatur-heissester">
 <h3>Temperatures: Which planet is the hottest?</h3>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>Venus</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>On Venus it is about 464 °C on average. Its thick air of carbon dioxide traps the heat.</p></li>
-<li class="quiz-info" data-option="1"><p class="quiz-info-head"><strong>Mercury</strong></p><p>Mercury is closest to the Sun, but it has hardly any atmosphere. By day it gets up to about 430 °C, at night it drops to about −170 °C.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>Mars</strong></p><p>Mars is about −60 °C on average. Its air is thin and stores hardly any heat.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Jupiter</strong></p><p>Jupiter is far from the Sun. Its clouds are very cold.</p></li>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Venus</strong> <span class="question-badge question-badge-right">right answer</span></p><p>On Venus it is about 464 °C on average. Its thick air of carbon dioxide traps the heat.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Mercury</strong></p><p>Mercury is closest to the Sun, but it has hardly any atmosphere. By day it gets up to about 430 °C, at night it drops to about −170 °C.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Mars</strong></p><p>Mars is about −60 °C on average. Its air is thin and stores hardly any heat.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Jupiter</strong></p><p>Jupiter is far from the Sun. Its clouds are very cold.</p></li>
 </ul>
-<p class="quiz-explanation">Venus is hotter than Mercury even though it is farther from the Sun. The reason is the greenhouse effect of its thick atmosphere.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Venus is hotter than Mercury even though it is farther from the Sun. The reason is the greenhouse effect of its thick atmosphere.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Venus" rel="noopener">Venus (Wikipedia)</a></li>
 </ul>
 <p><a href="#frage-temperatur-heissester">To the question</a></p>
@@ -339,24 +340,24 @@
 <li class="quiz-solution" id="loesung-temperatur-mars">
 <h3>Temperatures: On Mars it is warmer on average than on Earth.</h3>
 <p><strong>Right answer:</strong> The statement is false.</p>
-<p class="quiz-explanation">That is not true. On Mars it is about −60 °C on average, on Earth about 15 °C. Mars is farther from the Sun and has only thin air.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">That is not true. On Mars it is about −60 °C on average, on Earth about 15 °C. Mars is farther from the Sun and has only thin air.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Mars" rel="noopener">Mars (Wikipedia)</a></li>
 </ul>
 <p><a href="#frage-temperatur-mars">To the question</a></p>
 </li>
 <li class="quiz-solution" id="loesung-jahr-was-ist">
 <h3>Orbital periods: What is a year on a planet?</h3>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>One trip around the Sun</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Every planet needs a different time for one trip around the Sun. That is its year.</p></li>
-<li class="quiz-info" data-option="1"><p class="quiz-info-head"><strong>One spin around its own axis</strong></p><p>One spin around its own axis makes a day, not a year.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>One trip of a moon around its planet</strong></p><p>That is the orbital period of a moon. On Earth we call it a month.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Always 365 days</strong></p><p>A year on Earth lasts about 365 days. On other planets a year is shorter or longer.</p></li>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>One trip around the Sun</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Every planet needs a different time for one trip around the Sun. That is its year.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>One spin around its own axis</strong></p><p>One spin around its own axis makes a day, not a year.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>One trip of a moon around its planet</strong></p><p>That is the orbital period of a moon. On Earth we call it a month.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Always 365 days</strong></p><p>A year on Earth lasts about 365 days. On other planets a year is shorter or longer.</p></li>
 </ul>
-<p class="quiz-explanation">A year is the time for one trip around the Sun. Every planet has a different path and speed, so each has a year of its own length.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">A year is the time for one trip around the Sun. Every planet has a different path and speed, so each has a year of its own length.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Year" rel="noopener">Year (Wikipedia)</a></li>
 </ul>
 <p><a href="#frage-jahr-was-ist">To the question</a></p>
@@ -364,9 +365,9 @@
 <li class="quiz-solution" id="loesung-jahr-reihenfolge">
 <h3>Orbital periods: Put the planets in order of the length of their year. The shortest year comes first.</h3>
 <p><strong>Right answer:</strong> 1. Mercury, 2. Mars, 3. Jupiter, 4. Saturn</p>
-<p class="quiz-explanation">The farther a planet is from the Sun, the longer its path and the slower it moves. So its year is longer: Mercury needs about 88 days, Mars about 687 days, Jupiter about 12 Earth years and Saturn about 29 Earth years.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">The farther a planet is from the Sun, the longer its path and the slower it moves. So its year is longer: Mercury needs about 88 days, Mars about 687 days, Jupiter about 12 Earth years and Saturn about 29 Earth years.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Year" rel="noopener">Year (Wikipedia)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Saturn" rel="noopener">Saturn (Wikipedia)</a></li>
 </ul>
@@ -374,15 +375,15 @@
 </li>
 <li class="quiz-solution" id="loesung-monde-ohne">
 <h3>Moons: Which planets have no moon?</h3>
-<ul class="quiz-infos">
-<li class="quiz-info quiz-info-right" data-option="0"><p class="quiz-info-head"><strong>Mercury</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Mercury has no moon. It is the smallest planet and the closest to the Sun.</p></li>
-<li class="quiz-info quiz-info-right" data-option="1"><p class="quiz-info-head"><strong>Venus</strong> <span class="quiz-badge quiz-badge-right">right answer</span></p><p>Venus has no moon, even though it is almost as big as Earth.</p></li>
-<li class="quiz-info" data-option="2"><p class="quiz-info-head"><strong>Earth</strong></p><p>Earth has one moon. It goes around Earth in about a month.</p></li>
-<li class="quiz-info" data-option="3"><p class="quiz-info-head"><strong>Mars</strong></p><p>Mars has two small moons, Phobos and Deimos.</p></li>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Mercury</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Mercury has no moon. It is the smallest planet and the closest to the Sun.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Venus</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Venus has no moon, even though it is almost as big as Earth.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Earth</strong></p><p>Earth has one moon. It goes around Earth in about a month.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Mars</strong></p><p>Mars has two small moons, Phobos and Deimos.</p></li>
 </ul>
-<p class="quiz-explanation">Mercury and Venus are the only planets without a moon. All other planets have at least one.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Mercury and Venus are the only planets without a moon. All other planets have at least one.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Mercury_(planet)" rel="noopener">Mercury (Wikipedia)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Venus" rel="noopener">Venus (Wikipedia)</a></li>
 </ul>
@@ -391,9 +392,9 @@
 <li class="quiz-solution" id="loesung-monde-mars">
 <h3>Moons: How many moons does Mars have?</h3>
 <p><strong>Right answer:</strong> 2 moons</p>
-<p class="quiz-explanation">Mars has two small moons, Phobos and Deimos. They are irregularly shaped, a bit like potatoes.</p>
-<p class="quiz-more">More on it:</p>
-<ul class="quiz-links">
+<p class="question-explanation">Mars has two small moons, Phobos and Deimos. They are irregularly shaped, a bit like potatoes.</p>
+<p class="question-more">More on it:</p>
+<ul class="question-links">
 <li><a href="https://en.wikipedia.org/wiki/Mars" rel="noopener">Mars (Wikipedia)</a></li>
 </ul>
 <p><a href="#frage-monde-mars">To the question</a></p>
@@ -409,7 +410,7 @@
 </ul>
 </section>
 </main>
-<footer class="quiz-footer"><p>A quiz on lernapps.net · <a href="https://lernapps.net/imprint/">Imprint</a> · <a href="https://lernapps.net/privacy/">Privacy</a></p></footer>
+<footer class="page-footer"><p>A quiz on lernapps.net · <a href="https://lernapps.net/imprint/">Imprint</a> · <a href="https://lernapps.net/privacy/">Privacy</a></p></footer>
 <script type="application/json" id="quiz-data">{"quiz":{"$schema":"../node_modules/@lernapps/app-templates/runtime/quiz/quiz.v1.schema.json","languages":["de","en"],"title":"Planet Quiz","intro":"Ten questions about the planets of our Solar System: structure, sizes, temperatures, orbital periods and moons. For grades 3 to 5.","questions":[{"id":"aufbau-reihenfolge","text":"Structure: Put the planets in order of their distance from the Sun. The planet closest to the Sun comes first.","explanation":"Eight planets orbit the Sun. Earth is the third from the Sun, and Mars comes after it and before Jupiter. A sentence made from the first letters helps to remember the order.","links":[{"title":"Solar System (Wikipedia)","url":"https://en.wikipedia.org/wiki/Solar_System"}],"type":"ordering","items":["Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune"]},{"id":"aufbau-gestein","text":"Structure: Which planets are rocky planets, made of solid rock?","explanation":"The four inner planets Mercury, Venus, Earth and Mars are rocky planets. Jupiter and Saturn are gas giants, and Uranus and Neptune are ice giants.","links":[{"title":"Solar System (Wikipedia)","url":"https://en.wikipedia.org/wiki/Solar_System"}],"type":"multiple-choice","options":[{"text":"Venus","correct":true,"info":"Venus is a rocky planet. It is almost as big as Earth and has a solid surface."},{"text":"Mars","correct":true,"info":"Mars is a rocky planet. Its surface is made of rock and red dust."},{"text":"Jupiter","correct":false,"info":"Jupiter is a gas giant. It is made mostly of hydrogen and helium and has no solid surface like Earth."},{"text":"Neptune","correct":false,"info":"Neptune is an ice giant. It is very far from the Sun and has no solid surface like Earth."}]},{"id":"groessen-groesster","text":"Sizes: Which planet is the biggest in the Solar System?","explanation":"Jupiter is the biggest planet. The smallest is Mercury.","links":[{"title":"Jupiter (Wikipedia)","url":"https://en.wikipedia.org/wiki/Jupiter"},{"title":"Mercury (Wikipedia)","url":"https://en.wikipedia.org/wiki/Mercury_(planet)"}],"type":"single-choice","options":[{"text":"Jupiter","correct":true,"info":"Jupiter is a gas giant. Its diameter is more than eleven times that of Earth."},{"text":"Saturn","correct":false,"info":"Saturn is the second biggest planet. With its rings it looks huge, but without them it is smaller than Jupiter."},{"text":"Neptune","correct":false,"info":"Neptune is an ice giant and the outermost planet. It is much smaller than Jupiter."},{"text":"Earth","correct":false,"info":"Earth is the biggest of the four rocky planets. Next to the gas giants, though, it is small."}]},{"id":"groessen-jupiter-erde","text":"Sizes: About how many times does Earth fit into the diameter of Jupiter? Being off by up to 1 still counts as correct.","explanation":"Jupiter's diameter is about 143,000 kilometres and Earth's is about 12,700 kilometres. Divided, that gives about 11.","links":[{"title":"Jupiter (Wikipedia)","url":"https://en.wikipedia.org/wiki/Jupiter"}],"type":"number","answer":11,"tolerance":1,"unit":"times","mistakes":[{"answer":2,"message":"Too small: Jupiter is much more than twice as wide as Earth."},{"answer":100,"message":"Too big: Jupiter is huge, but not a hundred times as wide as Earth."}]},{"id":"temperatur-heissester","text":"Temperatures: Which planet is the hottest?","explanation":"Venus is hotter than Mercury even though it is farther from the Sun. The reason is the greenhouse effect of its thick atmosphere.","links":[{"title":"Venus (Wikipedia)","url":"https://en.wikipedia.org/wiki/Venus"}],"type":"single-choice","options":[{"text":"Venus","correct":true,"info":"On Venus it is about 464 °C on average. Its thick air of carbon dioxide traps the heat."},{"text":"Mercury","correct":false,"info":"Mercury is closest to the Sun, but it has hardly any atmosphere. By day it gets up to about 430 °C, at night it drops to about −170 °C."},{"text":"Mars","correct":false,"info":"Mars is about −60 °C on average. Its air is thin and stores hardly any heat."},{"text":"Jupiter","correct":false,"info":"Jupiter is far from the Sun. Its clouds are very cold."}]},{"id":"temperatur-mars","text":"Temperatures: On Mars it is warmer on average than on Earth.","explanation":"That is not true. On Mars it is about −60 °C on average, on Earth about 15 °C. Mars is farther from the Sun and has only thin air.","links":[{"title":"Mars (Wikipedia)","url":"https://en.wikipedia.org/wiki/Mars"}],"type":"true-false","answer":false},{"id":"jahr-was-ist","text":"Orbital periods: What is a year on a planet?","explanation":"A year is the time for one trip around the Sun. Every planet has a different path and speed, so each has a year of its own length.","links":[{"title":"Year (Wikipedia)","url":"https://en.wikipedia.org/wiki/Year"}],"type":"single-choice","options":[{"text":"One trip around the Sun","correct":true,"info":"Every planet needs a different time for one trip around the Sun. That is its year."},{"text":"One spin around its own axis","correct":false,"info":"One spin around its own axis makes a day, not a year."},{"text":"One trip of a moon around its planet","correct":false,"info":"That is the orbital period of a moon. On Earth we call it a month."},{"text":"Always 365 days","correct":false,"info":"A year on Earth lasts about 365 days. On other planets a year is shorter or longer."}]},{"id":"jahr-reihenfolge","text":"Orbital periods: Put the planets in order of the length of their year. The shortest year comes first.","explanation":"The farther a planet is from the Sun, the longer its path and the slower it moves. So its year is longer: Mercury needs about 88 days, Mars about 687 days, Jupiter about 12 Earth years and Saturn about 29 Earth years.","links":[{"title":"Year (Wikipedia)","url":"https://en.wikipedia.org/wiki/Year"},{"title":"Saturn (Wikipedia)","url":"https://en.wikipedia.org/wiki/Saturn"}],"type":"ordering","items":["Mercury","Mars","Jupiter","Saturn"]},{"id":"monde-ohne","text":"Moons: Which planets have no moon?","explanation":"Mercury and Venus are the only planets without a moon. All other planets have at least one.","links":[{"title":"Mercury (Wikipedia)","url":"https://en.wikipedia.org/wiki/Mercury_(planet)"},{"title":"Venus (Wikipedia)","url":"https://en.wikipedia.org/wiki/Venus"}],"type":"multiple-choice","options":[{"text":"Mercury","correct":true,"info":"Mercury has no moon. It is the smallest planet and the closest to the Sun."},{"text":"Venus","correct":true,"info":"Venus has no moon, even though it is almost as big as Earth."},{"text":"Earth","correct":false,"info":"Earth has one moon. It goes around Earth in about a month."},{"text":"Mars","correct":false,"info":"Mars has two small moons, Phobos and Deimos."}]},{"id":"monde-mars","text":"Moons: How many moons does Mars have?","explanation":"Mars has two small moons, Phobos and Deimos. They are irregularly shaped, a bit like potatoes.","links":[{"title":"Mars (Wikipedia)","url":"https://en.wikipedia.org/wiki/Mars"}],"type":"number","answer":2,"tolerance":0,"unit":"moons","mistakes":[{"answer":1,"message":"Earth has one moon. Mars has more."},{"answer":0,"message":"Mars does have moons. They are small lumps with irregular shapes."}]}],"sources":[{"title":"NASA Planetary Fact Sheet","url":"https://nssdc.gsfc.nasa.gov/planetary/factsheet/"},{"title":"Wikipedia: Solar System, planet articles and Year","url":"https://de.wikipedia.org/wiki/Sonnensystem"}]},"lang":"en"}</script>
   </body>
 </html>
